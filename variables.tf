@@ -1,27 +1,27 @@
  variable "ec2_name" {
    description = "ec2 instance tag Name"
-   default = "demo-terraform-ec2"
+   default = "DevOS_terraform_by hyein (External)"
  }
 
  variable "subnet_id" {
    description = "subnet identity"
-   default = "subnet-09be00293d7e87e26"
+   default = "subnet-1af11756"
  }
 
  variable "security_groups" {
    description = "security group ids"
    type = list(string)
-   default = ["sg-0450393f4cf62361c"]
+   default = ["sg-01f61050e58083d6e"]
  }
 
  variable "key_pair" {
    description = "pem key pair name"
-   default = "devos-seoul-keypair"
+   default = "hyein"
  }
 
  variable "instance_type" {
    description = "ec2 instance type"
-   default = "t2.micro"
+   default = "t2.nano"
  }
 
  variable "assign_ip" {
